@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="action-bar">
+    <button bindtap="getUserInfo">写留言</button>
+    <view class="msg-container"  wx:if="{{false}}">
+      <view class="editor-container">
+        <textarea
+          model:value="{{msg}}"
+          placeholder="留言精选后, 将对所有人可见并外显 IP 归属地"
+        ></textarea>
+      </view>
+      <button bindtap="leaveMsg">留言</button>
+    </view>
+  </view>
+  <view class="comment-container">
+    <comment-item
+      wx:for="{{msgList}}"
+      wx:key="content"
+      content="{{item}}"
+    ></comment-item>
+  </view>
+</view>
