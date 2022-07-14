@@ -1,0 +1,17 @@
+.editor-text {
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}
+  
+.editor-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10rpx 0;
+  color: #57606a;
+  font-size: 25rpx;
+}

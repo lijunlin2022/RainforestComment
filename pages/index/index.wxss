@@ -1,26 +1,4 @@
 .container {
-  background-color: #f6f8fa;
-}
-
-/** action bar **/
-.action-bar {
+  position: relative;
   padding: 10px;
-  border-bottom: 1px solid #e1e4e8;
-}
-
-.action-bar .msg-container .editor-container {
-  background-color: #fff;
-  height: 100px;
-}
-
-.action-bar .msg-container .editor-container textarea {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-}
-
-.action-bar button {
-  color: #0969da;
-  font-size: 14px;
 }

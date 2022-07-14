@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "comment-item": "/components/CommentItem"
+    "x-rain-editor": "/components/rain-editor",
+    "x-article": "/components/article",
+    "x-buttom-modal": "/components/bottom-modal",
+    "x-login": "/components/login"
   }
 }

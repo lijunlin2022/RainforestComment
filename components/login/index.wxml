@@ -1,0 +1,11 @@
+<x-bottom-modal modalShow="{{modalShow}}">
+  <view class="btn-container">
+    <button
+      class="primary-btn"
+      type="primary"
+      bindtap="onGetUserInfo"
+    >
+      获取微信授权信息
+    </button>
+  </view>
+</x-bottom-modal>

@@ -1,0 +1,44 @@
+/** comment-item **/ 
+.comment {
+  display: flex;
+  margin: 20rpx;
+  background-color: #fff;
+  border: 1rpx solid #e1e4e8;
+  border-radius: 8rpx;
+}
+
+.comment-img {
+  display: flex;
+  justify-content: center;
+  width: 80rpx;
+  padding: 10rpx;
+}
+
+.comment-img .img {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  border: 1rpx solid #d0d7de;
+}
+
+.comment-text {
+  width: calc(100vw - 100rpx);
+  padding: 10rpx 20rpx;
+}
+
+.basic-info {
+  display: flex;
+  justify-content: space-between;
+  color: #57606a;
+  font-size: 25rpx;
+}
+
+.content-container {
+  word-break: break-all;
+  font-size: 30rpx;
+  padding: 10rpx 0;
+}
+
+.to-nickname {
+  color: #0969da;
+}

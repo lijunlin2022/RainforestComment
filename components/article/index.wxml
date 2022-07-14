@@ -1,0 +1,13 @@
+<view class="article">
+  <view class="option">
+    <view class="create-time">
+      {{article.createTime}}
+    </view>
+    <view class="copy" bindtap="copyId">
+      复制 ID
+    </view>
+  </view>
+  <view class="title" bindtap="jumpComments">
+    {{article.title}}
+  </view>
+</view>

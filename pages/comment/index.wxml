@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="action">
+    <button bindtap="activeModal" size="mini" type="primary" class="mini-btn">
+      写留言
+    </button>
+  </view>
+  <block wx:for="{{list}}" wx:key="_id" wx:for-item="comment">
+    <x-comment
+      comment="{{comment}}"
+      bind:onSonReply="jumpReply"
+      data-comment-id="{{comment._id}}"
+      data-article-id="{{comment.articleId}}"
+    >
+      <block wx:for="{{comment.children}}" wx:key="_id" wx:for-item="reply">
+        <x-simple-reply
+          reply="{{reply}}"
+          bindtap="jumpReply"
+          data-comment-id="{{comment._id}}"
+          data-article-id="{{comment.articleId}}"
+        >
+        </x-simple-reply>
+      </block>
+      <view
+        class="reply-num"
+        bindtap="jumpReply"
+        data-comment-id="{{comment._id}}"
+        data-article-id="{{comment.articleId}}"
+        wx:if="{{comment.children.length}}"
+      >
+        共 {{comment.replyTotal}} 条回复 >
+      </view>
+    </x-comment>
+  </block>
+  <x-login
+    modalShow="{{loginShow}}"
+    bind:loginSuccess="onLoginSuccess"
+    bind:loginFail="onLoginFail"
+  ></x-login>
+  <x-bottom-modal
+    modalShow="{{modalShow}}"
+  >
+    <x-rain-editor
+      value="{{content}}"
+      bind:onSonChange="onChange"
+      bind:onSonSend="onSend"
+    >
+    </x-rain-editor>
+  </x-bottom-modal>
+</view>

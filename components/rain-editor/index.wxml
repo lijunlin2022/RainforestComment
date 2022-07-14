@@ -1,0 +1,18 @@
+<view class="editor-container">
+  <textarea
+    class="editor-text"
+    bindinput="onChange"
+    value="{{value}}"
+    maxlength="1000"
+    placeholder="{{placeholder}}"
+    show-confirm-bar="{{false}}"
+    cursor-spacing="170"
+  >
+  </textarea>
+  <view class="editor-btn">
+    <view>{{remainderWordsNum}}</view>
+    <button type="primary" size="mini" class="mini-btn" bindtap="onSend">
+      发送
+    </button>
+  </view>
+</view>

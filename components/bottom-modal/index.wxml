@@ -1,0 +1,17 @@
+<view class="container" hidden="{{!modalShow}}">
+  <view class="panel">
+    <view class="btn-container">
+      <button
+        size="mini"
+        type="primary"
+        bindtap="onClose"
+        class="mini-btn"
+      >
+        x
+      </button>
+    </view>
+    <view class="slot-container">
+      <slot></slot>
+    </view>
+  </view>
+</view>

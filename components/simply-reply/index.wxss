@@ -1,0 +1,13 @@
+.container {
+  padding: 10rpx 20rpx;
+  font-size: 30rpx;
+  background-color: #f6f8fa;
+}
+
+.container:hover {
+  background-color: #e5e7e9;
+}
+
+.nickname, .to-nickname {
+  color: #0969da;
+}

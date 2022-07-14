@@ -1,0 +1,32 @@
+<view class="user-container">
+  <block wx:if="{{hasUserInfo}}">
+    <image class="avatar" src="{{userInfo.avatarUrl}}" />
+    <text class="nickname">{{userInfo.nickname}}</text>
+  </block>
+  <block wx:else>
+    <button class="primary-btn" bindtap="activeLogin">登录</button>
+  </block>
+</view>
+<view class="nav">
+  <x-nav-bar>
+    <text class="iconfont icon-person" slot="left"></text>
+    <text slot="center">个人资料</text>
+    <text class="iconfont icon-arrow-right" slot="right"></text>
+  </x-nav-bar>
+  <x-nav-bar>
+    <text class="iconfont icon-comment" slot="left"></text>
+    <text slot="center">我的评论</text>
+    <text class="iconfont icon-arrow-right" slot="right"></text>
+  </x-nav-bar>
+  <x-nav-bar>
+    <text class="iconfont icon-qrcode" slot="left"></text>
+    <text slot="center">小程序码</text>
+    <text class="iconfont icon-arrow-right" slot="right"></text>
+  </x-nav-bar>
+</view>
+<x-login
+  modalShow="{{loginShow}}"
+  bind:loginSuccess="onLoginSuccess"
+  bind:loginFail="onLoginFail"
+>
+</x-login>

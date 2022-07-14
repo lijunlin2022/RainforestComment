@@ -1,0 +1,28 @@
+
+<block wx:for="{{commentList}}" wx:key="_id">
+  <x-comment
+    comment="{{item}}"
+    bind:onSonReply="showModal"
+  >
+  </x-comment>
+</block>
+<view class="reply-num">
+  相关回复共 {{replyList.length}} 条
+</view>
+<block wx:for="{{replyList}}" wx:key="_id">
+  <x-reply
+    comment="{{item}}"
+    bind:onSonReply="showModal"
+  >
+  </x-reply>
+</block>
+<x-bottom-modal
+  modalShow="{{modalShow}}"
+>
+  <x-rain-editor
+    value="{{content}}"
+    bind:onSonChange="onChange"
+    bind:onSonSend="onSend"
+  >
+  </x-rain-editor>
+</x-bottom-modal>

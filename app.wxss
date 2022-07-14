@@ -1,0 +1,24 @@
+.mini-btn {
+  font-size: 25rpx !important;
+  font-weight: normal !important;
+  padding: 3rpx 35rpx !important;
+  margin: 0rpx 20rpx !important;
+  width: auto !important;
+  background-color: #2da44e !important;
+  border: 1px solid #2a9147 !important;
+  color: #fff !important;
+}
+
+.primary-btn {
+  font-size: 25rpx !important;
+  font-weight: normal !important;
+  background-color: #2da44e !important;
+  border: 1px solid #2a9147 !important;
+  color: #fff !important;
+}
+
+page {
+  background-color: #f6f8fa;
+}
+
+@import 'iconfont.wxss';

@@ -1,0 +1,32 @@
+.container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f6f8fa;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80rpx;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.slot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

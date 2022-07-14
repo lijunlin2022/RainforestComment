@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "x-comment": "/components/comment",
+    "x-login": "/components/login",
+    "x-bottom-modal": "/components/bottom-modal",
+    "x-rain-editor": "/components/rain-editor",
+    "x-simple-reply": "/components/simply-reply"
+  }
+}

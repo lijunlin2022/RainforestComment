@@ -1,0 +1,25 @@
+<view class="comment">
+  <view class="comment-img">
+    <image class="img" src="{{comment.fromUserInfo[0].avatarUrl}}" />
+  </view>
+  <view class="comment-text">
+    <view class="basic-info">
+      <view class="from-nickname">
+        {{comment.fromUserInfo[0].nickname}}
+      </view>
+      <view class="reply" bindtap="onReply">
+        <text class="iconfont icon-comment"></text>
+      </view>
+    </view>
+    <view class="content-container">
+      <text wx:if="{{comment.rootCommentId}}">
+        <text class="prefix">回复</text>
+        <text class="to-nickname">@{{ comment.toUserInfo[0].nickname }}: </text>
+      </text>
+      <text class="content">{{ comment.content }}</text>
+    </view>
+    <view class="simple-reply">
+      <slot></slot>
+    </view>
+  </view>
+</view>

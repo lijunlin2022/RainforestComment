@@ -1,0 +1,4 @@
+.reply-num {
+  font-size: 30rpx;
+  padding: 20rpx;
+}

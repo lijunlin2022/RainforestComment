@@ -1,0 +1,27 @@
+.article {
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  border: 1rpx solid #e1e4e8;
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  color: #57606a;
+  font-size: 25rpx;
+  padding-bottom: 10rpx;
+}
+
+.title {
+  font-size: 30rpx;
+}
+
+.copy {
+  color: #0969da;
+}
+
+.copy:hover {
+  text-decoration: underline;
+}

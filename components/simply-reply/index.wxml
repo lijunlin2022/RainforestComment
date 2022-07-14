@@ -1,0 +1,8 @@
+<view class="container">
+  <text class="nickname">{{reply.fromUserInfo[0].nickname}}</text>
+  <text wx:if="{{reply.toUserInfo[0].nickname}}">
+    <text class="prefix">回复</text>
+    <text class="to-nickname">@{{reply.toUserInfo[0].nickname}}</text>
+  </text>
+  <text class="content">: {{reply.content}}</text>
+</view>

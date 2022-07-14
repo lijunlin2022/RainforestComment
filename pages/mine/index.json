@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-nav-bar": "/components/nav-bar",
+    "x-login": "/components/login"
+  }
+}

@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  padding-top: 80rpx;
+}
+
+.action {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 80rpx;
+  border-bottom: 1rpx solid #d5d8da;
+  background-color: #fff;
+}
+
+.reply-num {
+  padding: 5rpx 20rpx;
+  font-size: 30rpx;
+  color: #0969da;
+  background-color: #f6f8fa;
+}
+
+.reply-num:hover {
+  background-color: #e1e4e8;
+}
+
+.msg-container {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.btn-container {
+  box-sizing: border-box;
+  height: 80rpx;
+  padding: 10rpx 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1rpx solid #e1e4e8;
+}

@@ -1,7 +1,7 @@
 Component({
   properties: {
-    content: {
-      type: String
+    reply: {
+      type: Object
     }
   }
 })

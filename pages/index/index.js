@@ -1,29 +1,32 @@
+const MAX_LIMIT = 10
 Page({
+  getList () {
+    wx.showLoading({ title: 'loading...' })
+    wx.cloud.callFunction({
+      name: 'getArticles',
+      data: {
+        start: this.data.list.length,
+        count: MAX_LIMIT
+      }
+    }).then(res => {
+      const { result: { data, total } } = res
+      this.setData({
+        total,
+        list: this.data.list.concat(data)
+      })
+      wx.hideLoading()
+    })
+  },
   data: {
-    msg: '',
-    msgList: [
-      'xxx',
-      'xxx'
-    ]
+    list: [],
+    total: 0,
   },
   onLoad () {
-    wx.getUserProfile()
+    this.getList()
   },
-  getUserInfo () {
-    console.log('xxx')
-    wx.getUserProfile({
-      desc: '本程序获取用户信息仅用于展示留言, 不做其他用途',
-      success (res) {
-        console.log('userInfo', res)
-      }
-    })
-  },
-  leaveMsg () {
-    this.setData({
-      msgList: [...this.data.msgList, this.data.msg]
-    })
-    this.setData({
-      msg: ''
-    })
+  onReachBottom () {
+    if (this.data.list.length < this.data.total) {
+      this.getList()
+    }
   }
 })

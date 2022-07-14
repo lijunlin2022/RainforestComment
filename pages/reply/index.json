@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "x-comment": "/components/comment",
+    "x-rain-editor": "/components/rain-editor",
+    "x-reply": "/components/comment",
+    "x-bottom-modal": "/components/bottom-modal"
+  }
+}
