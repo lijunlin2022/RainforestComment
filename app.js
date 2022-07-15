@@ -1,3 +1,4 @@
+const { DEV_ENV_ID, PROD_ENV_ID } = require('./config.js')
 App({
   async initUserInfo () {
     return wx.cloud.callFunction({
@@ -14,7 +15,8 @@ App({
   },
   initCloud () {
     wx.cloud.init({
-      env: 'cloud1-7gnlpcr621a268bf',
+      env: DEV_ENV_ID, 
+      // env: PROD_ENV_ID,
       traceUser: true
     })
   },
