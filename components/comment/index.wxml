@@ -11,6 +11,9 @@
         <text class="iconfont icon-comment"></text>
       </view>
     </view>
+    <view class="time-container">
+      {{timeStr}}
+    </view>
     <view class="content-container">
       <text wx:if="{{comment.rootCommentId}}">
         <text class="prefix">回复</text>

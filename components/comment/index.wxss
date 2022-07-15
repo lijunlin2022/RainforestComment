@@ -29,6 +29,10 @@
 .basic-info {
   display: flex;
   justify-content: space-between;
+  font-size: 25rpx;
+}
+
+.time-container {
   color: #57606a;
   font-size: 25rpx;
 }
